@@ -1,0 +1,1 @@
+Welcome to the project repository! This repository is for the development process of the 'Asset Pack' I'm currently making. The game asset pack is centered around 'Delivery' whereas the player character is the package themselves; shapeshifting with various unique abilities!
