@@ -11,14 +11,12 @@
             "id": "845456858a57930d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "tldraw-view",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "[02] Concept Designs/Brainstorming.md"
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Brainstorming"
             }
           }
         ]
@@ -166,24 +164,33 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "tldraw:Create new tldrawing": false
     }
   },
-  "active": "a7681822a2c65c7f",
+  "active": "845456858a57930d",
   "lastOpenFiles": [
+    "[02] Concept Designs/Concept Design.md",
+    "[02] Concept Designs/Brainstorming.md",
+    "README.md",
+    "Untitled.canvas",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Test.TLDRAW.md",
+    "Untitled.base",
+    "Untitled",
+    "[02] Concept Designs/Untitled.md",
+    "[02] Concept Designs/Untitled.canvas",
     "[01] Asset Pack/placeholder.txt",
     "[02] Concept Designs/placeholder.txt",
     "[03] Project Startup Demo/placeholder.txt",
     "[03] Project Startup Demo/New Text Document.txt",
-    "README.md",
     "Asset Pack/Untitled.md",
     "[03] Project Startup Demo",
     "[02] Concept Designs",
     "[01]  Concept Designs",
     "2",
-    "[01] Asset Pack",
-    "Welcome.md",
-    "Concept Designs",
-    "Project Startup Demo"
+    "Welcome.md"
   ]
 }
