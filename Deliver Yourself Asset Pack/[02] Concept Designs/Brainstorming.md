@@ -230,6 +230,170 @@ tags:
 				"typeName": "binding"
 			},
 			{
+				"x": -160.74841216021287,
+				"y": 857.5803550815675,
+				"rotation": 0,
+				"isLocked": false,
+				"opacity": 1,
+				"meta": {},
+				"id": "shape:sqyIoR8qDKF62F_rwUvqj",
+				"type": "text",
+				"props": {
+					"color": "black",
+					"size": "xl",
+					"w": 638.7826224237002,
+					"font": "sans",
+					"textAlign": "start",
+					"autoSize": true,
+					"scale": 0.7630244654643948,
+					"richText": {
+						"type": "doc",
+						"content": [
+							{
+								"type": "orderedList",
+								"attrs": {
+									"start": 1
+								},
+								"content": [
+									{
+										"type": "listItem",
+										"content": [
+											{
+												"type": "paragraph",
+												"attrs": {
+													"dir": "auto"
+												},
+												"content": [
+													{
+														"type": "text",
+														"text": "Wind/Gust"
+													}
+												]
+											},
+											{
+												"type": "bulletList",
+												"content": [
+													{
+														"type": "listItem",
+														"content": [
+															{
+																"type": "paragraph",
+																"attrs": {
+																	"dir": "auto"
+																},
+																"content": [
+																	{
+																		"type": "text",
+																		"text": "Broken Pipe Set Variation"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"type": "listItem",
+														"content": [
+															{
+																"type": "paragraph",
+																"attrs": {
+																	"dir": "auto"
+																},
+																"content": [
+																	{
+																		"type": "text",
+																		"text": "Environment Variation"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "listItem",
+										"content": [
+											{
+												"type": "paragraph",
+												"attrs": {
+													"dir": "auto"
+												},
+												"content": [
+													{
+														"type": "text",
+														"text": "Poof (cloud of smoke)"
+													}
+												]
+											},
+											{
+												"type": "bulletList",
+												"content": [
+													{
+														"type": "listItem",
+														"content": [
+															{
+																"type": "paragraph",
+																"attrs": {
+																	"dir": "auto"
+																},
+																"content": [
+																	{
+																		"type": "text",
+																		"text": "Box Jump Variation"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"type": "listItem",
+														"content": [
+															{
+																"type": "paragraph",
+																"attrs": {
+																	"dir": "auto"
+																},
+																"content": [
+																	{
+																		"type": "text",
+																		"text": "Morph Transformation Variation"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"type": "listItem",
+														"content": [
+															{
+																"type": "paragraph",
+																"attrs": {
+																	"dir": "auto"
+																},
+																"content": [
+																	{
+																		"type": "text",
+																		"text": "Gift Projectile Despawn Variation"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				},
+				"parentId": "page:page",
+				"index": "aD9bD",
+				"typeName": "shape"
+			},
+			{
 				"x": 140.78073974259877,
 				"y": 647.1950545850627,
 				"rotation": 0,

@@ -13,10 +13,10 @@
             "state": {
               "type": "tldraw-view",
               "state": {
-                "file": "[02] Concept Designs/Brainstorming.md"
+                "file": "[02] Concept Designs/Concept Design.md"
               },
               "icon": "lucide-file",
-              "title": "Brainstorming"
+              "title": "Concept Design"
             }
           }
         ]
@@ -170,8 +170,8 @@
   },
   "active": "845456858a57930d",
   "lastOpenFiles": [
-    "[02] Concept Designs/Concept Design.md",
     "[02] Concept Designs/Brainstorming.md",
+    "[02] Concept Designs/Concept Design.md",
     "README.md",
     "Untitled.canvas",
     "Untitled 2.md",
