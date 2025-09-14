@@ -11,12 +11,12 @@
             "id": "dc1c50e854183963",
             "type": "leaf",
             "state": {
-              "type": "tldraw-view",
+              "type": "image",
               "state": {
-                "file": "[02] Concept Designs/Concept Design.md"
+                "file": "[02] Concept Designs/Images/VFX Concept Design.png"
               },
-              "icon": "lucide-file",
-              "title": "Concept Design"
+              "icon": "lucide-image",
+              "title": "VFX Concept Design"
             }
           }
         ]
@@ -170,9 +170,12 @@
   },
   "active": "dc1c50e854183963",
   "lastOpenFiles": [
+    "[02] Concept Designs/Concept Design.md",
+    "[02] Concept Designs/Images/VFX Concept Design.png",
+    "242402d3-24c4-4579-ae20-a1cacc53b9e9-tldrawFile.png",
+    "848248ba-8902-46cf-a6cd-7a9077b09342-tldrawFile.png",
     "[02] Concept Designs/Images/Props Concept Designs.png",
     "[02] Concept Designs/Images/Asset Pack Requirements.png",
-    "[02] Concept Designs/Concept Design.md",
     "[02] Concept Designs/Images/Morph Concept Designs.png",
     "[02] Concept Designs/Brainstorming.md",
     "[02] Concept Designs/Images",
