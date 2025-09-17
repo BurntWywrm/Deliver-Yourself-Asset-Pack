@@ -1,6 +1,10 @@
 # box_jump.gd
 extends State
 
+@export_group("Action States")
+@export var box_move: State
+@export var box_idle: State
+
 func enter() -> void:
 	print("Action: Box_Jump")
 

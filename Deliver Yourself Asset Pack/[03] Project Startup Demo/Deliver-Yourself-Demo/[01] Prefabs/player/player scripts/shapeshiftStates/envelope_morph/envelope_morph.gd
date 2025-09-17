@@ -1,16 +1,17 @@
 # envelope_morph.gd
 extends State
 
-@onready var movement_manager: Node = $shapeshiftManager/envelope/movementManager
+@onready var movement_manager: Node = $movementManager
 
 func enter() -> void:
 	print("Morph: Envelope")
-	movement_manager.init()
+	movement_manager.init(parent)
 
 func exit() -> void:
 	movement_manager.deinit()
 
 func process_input(event: InputEvent) -> State:
+	return selectionComponent.process_morph_selection(event, self) # Processes morph selection
 	return null
 
 func process_frame(delta: float) -> State:

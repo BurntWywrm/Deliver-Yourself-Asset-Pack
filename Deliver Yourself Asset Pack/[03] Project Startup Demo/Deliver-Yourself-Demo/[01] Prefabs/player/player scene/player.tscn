@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dyfd8nldo0m0x"]
+[gd_scene load_steps=18 format=3 uid="uid://dyfd8nldo0m0x"]
 
 [ext_resource type="Script" uid="uid://ct17jyb8u78n" path="res://[01] Prefabs/player/player scripts/playerScript/playerScript.gd" id="1_aq214"]
 [ext_resource type="Script" uid="uid://c6nlvd5ji3apw" path="res://[01] Prefabs/player/player scripts/shapeshiftManager/shapeshiftManager.gd" id="2_ibnt8"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://cj70fkwguuy8k" path="res://[01] Prefabs/player/player scripts/movementStates/gift_morph/gift_shoot.gd" id="10_o6x8g"]
 [ext_resource type="Script" uid="uid://whrycoxoplji" path="res://[01] Prefabs/player/player scripts/movementStates/envelope_morph/envelope_move.gd" id="10_rh1u8"]
 [ext_resource type="Script" uid="uid://k2jxcbv5n4qw" path="res://[01] Prefabs/player/player scripts/movementStates/envelope_morph/envelope_fall.gd" id="11_mm50h"]
+[ext_resource type="Script" uid="uid://bet1semdu4gf8" path="res://[01] Prefabs/player/player scripts/selectionComponent/selectionComponent.gd" id="16_cjj7x"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4q4gh"]
 
@@ -23,6 +24,12 @@ script = ExtResource("1_aq214")
 
 [node name="playerCollision" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4q4gh")
+
+[node name="selectionComponent" type="Node" parent="." node_paths=PackedStringArray("envelope_morph", "gift_morph", "box_morph")]
+script = ExtResource("16_cjj7x")
+envelope_morph = NodePath("../shapeshiftManager/envelope")
+gift_morph = NodePath("../shapeshiftManager/gift")
+box_morph = NodePath("../shapeshiftManager/box")
 
 [node name="shapeshiftManager" type="Node" parent="." node_paths=PackedStringArray("starting_morph")]
 script = ExtResource("2_ibnt8")
@@ -77,3 +84,14 @@ script = ExtResource("11_mm50h")
 script = ExtResource("10_axysn")
 
 [node name="playerVisuals" type="Node3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="cycleCD" type="Timer" parent="Timers"]
+unique_name_in_owner = true
+wait_time = 2.5
+one_shot = true
+
+[connection signal="timeout" from="Timers/cycleCD" to="selectionComponent" method="_on_cycle_cd_timeout"]

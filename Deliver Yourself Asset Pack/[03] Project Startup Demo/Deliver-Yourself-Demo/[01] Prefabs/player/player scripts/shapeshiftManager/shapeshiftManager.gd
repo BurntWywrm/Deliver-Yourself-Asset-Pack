@@ -9,9 +9,11 @@ extends Node
 
 # Initialize the state machine by giving each child state a reference to the
 # parent object it belongs to and enter the default starting_morph.
-func init(parent: Player) -> void:
+func init(parent: Player, animation: AnimationPlayer, selectionComponent) -> void:
 	for child in get_children():
 		child.parent = parent
+		child.animation = animation
+		child.selectionComponent = selectionComponent
 	
 	# Initialize to the default state
 	change_morph(starting_morph)

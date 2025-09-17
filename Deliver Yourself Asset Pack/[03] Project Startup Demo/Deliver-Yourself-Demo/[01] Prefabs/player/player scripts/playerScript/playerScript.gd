@@ -4,12 +4,14 @@ extends RigidBody3D
 
 ## delegates any node dependent logic to the state machine(s) for further processing
 
-@onready var shapeshift_manager: Node = $shapeshiftManager
+@onready var animation: AnimationPlayer = $AnimationPlayer # Animation Player
+@onready var shapeshift_manager: Node = $shapeshiftManager # State Manager
+@onready var selection_component: Node = $selectionComponent # Selection Component
 
 func _ready() -> void:
 	# Initialize the shapeshift_manager, passing a reference of the player to the morphs,
 	# that way they can move and react accordingly
-	shapeshift_manager.init(self)
+	shapeshift_manager.init(self, animation, selection_component)
 
 func _unhandled_input(event: InputEvent) -> void:
 	shapeshift_manager.process_input(event)
