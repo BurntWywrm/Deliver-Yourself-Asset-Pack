@@ -2,7 +2,7 @@
 extends State
 
 func enter() -> void:
-	pass
+	print("Action: Box_Move")
 
 func exit() -> void:
 	pass

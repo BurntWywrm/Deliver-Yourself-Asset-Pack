@@ -31,8 +31,9 @@ starting_morph = NodePath("box")
 [node name="box" type="Node" parent="shapeshiftManager"]
 script = ExtResource("3_vtf16")
 
-[node name="movementManager" type="Node" parent="shapeshiftManager/box"]
+[node name="movementManager" type="Node" parent="shapeshiftManager/box" node_paths=PackedStringArray("starting_movement")]
 script = ExtResource("4_xvlyh")
+starting_movement = NodePath("box_idle")
 
 [node name="box_move" type="Node" parent="shapeshiftManager/box/movementManager"]
 script = ExtResource("5_vhqd1")
@@ -46,8 +47,9 @@ script = ExtResource("5_xvlyh")
 [node name="gift" type="Node" parent="shapeshiftManager"]
 script = ExtResource("4_lb1x6")
 
-[node name="movementManager" type="Node" parent="shapeshiftManager/gift"]
+[node name="movementManager" type="Node" parent="shapeshiftManager/gift" node_paths=PackedStringArray("starting_movement")]
 script = ExtResource("4_xvlyh")
+starting_movement = NodePath("gift_idle")
 
 [node name="gift_move" type="Node" parent="shapeshiftManager/gift/movementManager"]
 script = ExtResource("9_l7uhm")
@@ -61,8 +63,9 @@ script = ExtResource("9_00gpa")
 [node name="envelope" type="Node" parent="shapeshiftManager"]
 script = ExtResource("3_dew5c")
 
-[node name="movementManager" type="Node" parent="shapeshiftManager/envelope"]
+[node name="movementManager" type="Node" parent="shapeshiftManager/envelope" node_paths=PackedStringArray("starting_movement")]
 script = ExtResource("4_xvlyh")
+starting_movement = NodePath("envelope_idle")
 
 [node name="envelope_move" type="Node" parent="shapeshiftManager/envelope/movementManager"]
 script = ExtResource("10_rh1u8")

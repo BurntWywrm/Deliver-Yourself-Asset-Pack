@@ -1,8 +1,8 @@
-# envelope_moev.gd
+# envelope_move.gd
 extends State
 
 func enter() -> void:
-	pass
+	print("Action: Envelope_Move")
 
 func exit() -> void:
 	pass

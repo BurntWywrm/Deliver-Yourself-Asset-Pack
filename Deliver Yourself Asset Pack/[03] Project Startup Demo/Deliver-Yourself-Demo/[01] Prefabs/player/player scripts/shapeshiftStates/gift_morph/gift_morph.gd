@@ -4,6 +4,7 @@ extends State
 @onready var movement_manager: Node = $shapeshiftManager/gift/movementManager
 
 func enter() -> void:
+	print("Morph: Gift")
 	movement_manager.init()
 
 func exit() -> void:
