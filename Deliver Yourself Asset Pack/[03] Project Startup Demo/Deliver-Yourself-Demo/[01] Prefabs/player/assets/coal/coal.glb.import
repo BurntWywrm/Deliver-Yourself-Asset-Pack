@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dg0xtd8qm1ntq"
-path="res://.godot/imported/crate.glb-a1e18de11233e7bfcf3b54678792a63d.scn"
+uid="uid://ojo8d2jqybbh"
+path="res://.godot/imported/coal.glb-b11f605b0ba3ca62dec1ffd50e86380a.scn"
 
 [deps]
 
-source_file="res://[00] Imports/crate.glb"
-dest_files=["res://.godot/imported/crate.glb-a1e18de11233e7bfcf3b54678792a63d.scn"]
+source_file="res://[01] Prefabs/player/assets/coal/coal.glb"
+dest_files=["res://.godot/imported/coal.glb-b11f605b0ba3ca62dec1ffd50e86380a.scn"]
 
 [params]
 

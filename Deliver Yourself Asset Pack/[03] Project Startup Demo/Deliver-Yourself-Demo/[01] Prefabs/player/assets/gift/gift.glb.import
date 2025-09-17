@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://db54ro2bxkdmu"
-path="res://.godot/imported/box.glb-98b157121778c64c13325a866f883a0d.scn"
+uid="uid://se6lw1kp10v6"
+path="res://.godot/imported/gift.glb-ec332828c6e6cb3ea9005273ce7e36ca.scn"
 
 [deps]
 
-source_file="res://[00] Imports/box.glb"
-dest_files=["res://.godot/imported/box.glb-98b157121778c64c13325a866f883a0d.scn"]
+source_file="res://[01] Prefabs/player/assets/gift/gift.glb"
+dest_files=["res://.godot/imported/gift.glb-ec332828c6e6cb3ea9005273ce7e36ca.scn"]
 
 [params]
 

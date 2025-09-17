@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd6y4gakma28r"
-path.s3tc="res://.godot/imported/box_light_box_texture.png-91084f5f1eacc8989b8a7367ed0cb8e6.s3tc.ctex"
+uid="uid://crdamo8armogg"
+path="res://.godot/imported/modular_pipe_set_Pipe_texture.png-85aa6d4e13e2ce4e436079631a6c49a1.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "5fc53521d30144ec0c0757f3684dca66"
+"md5": "5c63f78373705d5e5042f2aef47a546b"
 }
 
 [deps]
 
-source_file="res://[00] Imports/box_light_box_texture.png"
-dest_files=["res://.godot/imported/box_light_box_texture.png-91084f5f1eacc8989b8a7367ed0cb8e6.s3tc.ctex"]
+source_file="res://[01] Prefabs/modular_pipe_set/modular_pipe_set_Pipe_texture.png"
+dest_files=["res://.godot/imported/modular_pipe_set_Pipe_texture.png-85aa6d4e13e2ce4e436079631a6c49a1.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

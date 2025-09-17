@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hfgdgnajnnm8"
-path.s3tc="res://.godot/imported/crate_Crate_texture.png-c659af51e51273948b1b73eda86faead.s3tc.ctex"
+uid="uid://ccyq16h5osws4"
+path="res://.godot/imported/envelope_light_envelope_texture.png-912efd7b45dd7fb15c648d5e72a12cbf.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "0ad77b27ea12a10f5084050921a21a45"
+"md5": "1aef5d61dc7df6954a7f013440b211a5"
 }
 
 [deps]
 
-source_file="res://[00] Imports/crate_Crate_texture.png"
-dest_files=["res://.godot/imported/crate_Crate_texture.png-c659af51e51273948b1b73eda86faead.s3tc.ctex"]
+source_file="res://[01] Prefabs/player/assets/envelope/envelope_light_envelope_texture.png"
+dest_files=["res://.godot/imported/envelope_light_envelope_texture.png-912efd7b45dd7fb15c648d5e72a12cbf.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
