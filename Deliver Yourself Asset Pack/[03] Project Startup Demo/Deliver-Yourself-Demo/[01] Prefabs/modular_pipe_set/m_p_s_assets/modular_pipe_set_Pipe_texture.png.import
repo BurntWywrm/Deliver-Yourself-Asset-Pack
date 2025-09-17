@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hfgdgnajnnm8"
-path="res://.godot/imported/crate_Crate_texture.png-d20d8e1d64f374be1bcf79432e8435f5.ctex"
+uid="uid://crdamo8armogg"
+path="res://.godot/imported/modular_pipe_set_Pipe_texture.png-6957a4297cdcf11e7c79fda8c047e2e6.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "0ad77b27ea12a10f5084050921a21a45"
+"md5": "5c63f78373705d5e5042f2aef47a546b"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/crate_set/crate_Crate_texture.png"
-dest_files=["res://.godot/imported/crate_Crate_texture.png-d20d8e1d64f374be1bcf79432e8435f5.ctex"]
+source_file="res://[01] Prefabs/modular_pipe_set/m_p_s_assets/modular_pipe_set_Pipe_texture.png"
+dest_files=["res://.godot/imported/modular_pipe_set_Pipe_texture.png-6957a4297cdcf11e7c79fda8c047e2e6.ctex"]
 
 [params]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://csg0bphh8q0i0"
-path="res://.godot/imported/envelope.glb-2a470b1ccfabf6bec71b91e076e6f6ca.scn"
+uid="uid://dg0xtd8qm1ntq"
+path="res://.godot/imported/crate.glb-b8885f18c43a466a85622a246a155c85.scn"
 
 [deps]
 
-source_file="res://[01] Prefabs/player/assets/envelope/envelope.glb"
-dest_files=["res://.godot/imported/envelope.glb-2a470b1ccfabf6bec71b91e076e6f6ca.scn"]
+source_file="res://[01] Prefabs/crate_set/crate_assets/crate.glb"
+dest_files=["res://.godot/imported/crate.glb-b8885f18c43a466a85622a246a155c85.scn"]
 
 [params]
 

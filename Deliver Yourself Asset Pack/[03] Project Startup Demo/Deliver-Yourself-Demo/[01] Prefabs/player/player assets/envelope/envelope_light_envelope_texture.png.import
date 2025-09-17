@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd6y4gakma28r"
-path="res://.godot/imported/box_light_box_texture.png-97430610fa59bcac7f9439dac0456b99.ctex"
+uid="uid://ccyq16h5osws4"
+path="res://.godot/imported/envelope_light_envelope_texture.png-07e7ebf930c4044b515f1e0066f2fd54.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "5fc53521d30144ec0c0757f3684dca66"
+"md5": "1aef5d61dc7df6954a7f013440b211a5"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/player/assets/box/box_light_box_texture.png"
-dest_files=["res://.godot/imported/box_light_box_texture.png-97430610fa59bcac7f9439dac0456b99.ctex"]
+source_file="res://[01] Prefabs/player/player assets/envelope/envelope_light_envelope_texture.png"
+dest_files=["res://.godot/imported/envelope_light_envelope_texture.png-07e7ebf930c4044b515f1e0066f2fd54.ctex"]
 
 [params]
 

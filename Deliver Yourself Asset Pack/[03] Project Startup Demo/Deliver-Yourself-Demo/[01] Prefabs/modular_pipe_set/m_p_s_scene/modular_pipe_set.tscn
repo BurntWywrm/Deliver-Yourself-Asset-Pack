@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdobwneejgjvm"]
+
+[ext_resource type="PackedScene" uid="uid://c6xj6rmxk8fe4" path="res://[01] Prefabs/modular_pipe_set/m_p_s_assets/modular_pipe_set.glb" id="1_ucjua"]
+
+[node name="modular_pipe_set" instance=ExtResource("1_ucjua")]
+
+[node name="Pipe_3Way" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4232, 0.0646553, 0.151437)
+
+[node name="Pipe_4Way" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04833, 0, 0.151437)
+
+[node name="Pipe_90Angle" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34748, -0.120131, 0.151437)
+
+[node name="Pipe_Long" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.680839, 0, 0.151437)
+
+[node name="Pipe_Medium" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.152494, 0, 0.151437)
+
+[node name="Pipe_Short" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.673327, 0, 0.151437)
+
+[node name="Valve" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4229, 0.302374, 0.151437)

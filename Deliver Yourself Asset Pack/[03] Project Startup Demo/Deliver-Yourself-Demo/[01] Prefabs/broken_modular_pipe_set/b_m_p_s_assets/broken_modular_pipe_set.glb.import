@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c6xj6rmxk8fe4"
-path="res://.godot/imported/modular_pipe_set.glb-db1de6f64923319fb1c51f525f33acee.scn"
+uid="uid://crqd4e15qm1wf"
+path="res://.godot/imported/broken_modular_pipe_set.glb-bbe0a20cefbf3b578a7418819ad7bbf7.scn"
 
 [deps]
 
-source_file="res://[01] Prefabs/modular_pipe_set/modular_pipe_set.glb"
-dest_files=["res://.godot/imported/modular_pipe_set.glb-db1de6f64923319fb1c51f525f33acee.scn"]
+source_file="res://[01] Prefabs/broken_modular_pipe_set/b_m_p_s_assets/broken_modular_pipe_set.glb"
+dest_files=["res://.godot/imported/broken_modular_pipe_set.glb-bbe0a20cefbf3b578a7418819ad7bbf7.scn"]
 
 [params]
 

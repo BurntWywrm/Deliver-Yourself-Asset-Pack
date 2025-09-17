@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crdamo8armogg"
-path="res://.godot/imported/modular_pipe_set_Pipe_texture.png-85aa6d4e13e2ce4e436079631a6c49a1.ctex"
+uid="uid://dd6y4gakma28r"
+path="res://.godot/imported/box_light_box_texture.png-d88a858d172bafe11e172405e093d555.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "5c63f78373705d5e5042f2aef47a546b"
+"md5": "5fc53521d30144ec0c0757f3684dca66"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/modular_pipe_set/modular_pipe_set_Pipe_texture.png"
-dest_files=["res://.godot/imported/modular_pipe_set_Pipe_texture.png-85aa6d4e13e2ce4e436079631a6c49a1.ctex"]
+source_file="res://[01] Prefabs/player/player assets/box/box_light_box_texture.png"
+dest_files=["res://.godot/imported/box_light_box_texture.png-d88a858d172bafe11e172405e093d555.ctex"]
 
 [params]
 

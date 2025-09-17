@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyfd8nldo0m0x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4q4gh"]
+
+[node name="player" type="RigidBody3D"]
+
+[node name="playerCollision" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4q4gh")
+
+[node name="shapeshiftManager" type="Node" parent="."]
+
+[node name="box" type="Node" parent="shapeshiftManager"]
+
+[node name="movementManager" type="Node" parent="shapeshiftManager/box"]
+
+[node name="box_move" type="Node" parent="shapeshiftManager/box/movementManager"]
+
+[node name="box_jump" type="Node" parent="shapeshiftManager/box/movementManager"]
+
+[node name="box_idle" type="Node" parent="shapeshiftManager/box/movementManager"]
+
+[node name="gift" type="Node" parent="shapeshiftManager"]
+
+[node name="movementManager" type="Node" parent="shapeshiftManager/gift"]
+
+[node name="gift_move" type="Node" parent="shapeshiftManager/gift/movementManager"]
+
+[node name="gift_shoot" type="Node" parent="shapeshiftManager/gift/movementManager"]
+
+[node name="gift_idle" type="Node" parent="shapeshiftManager/gift/movementManager"]
+
+[node name="envelope" type="Node" parent="shapeshiftManager"]
+
+[node name="movementManager" type="Node" parent="shapeshiftManager/envelope"]
+
+[node name="envelope_move" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+
+[node name="envelope_fall" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+
+[node name="envelope_idle" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+
+[node name="playerVisuals" type="Node3D" parent="."]

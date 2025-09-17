@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqeposmnp7efs"
-path="res://.godot/imported/coal_coal_texture.png-5c60899294f233703d2c50a7a1753bff.ctex"
+uid="uid://bf6wxruar2qgq"
+path="res://.godot/imported/broken_modular_pipe_set_Pipe_texture.png-e8614e545ae51bcbb7a8c05d881d17d0.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "0071e95ce84da83bc2de92a61d22f7c7"
+"md5": "5c63f78373705d5e5042f2aef47a546b"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/player/assets/coal/coal_coal_texture.png"
-dest_files=["res://.godot/imported/coal_coal_texture.png-5c60899294f233703d2c50a7a1753bff.ctex"]
+source_file="res://[01] Prefabs/broken_modular_pipe_set/b_m_p_s_assets/broken_modular_pipe_set_Pipe_texture.png"
+dest_files=["res://.godot/imported/broken_modular_pipe_set_Pipe_texture.png-e8614e545ae51bcbb7a8c05d881d17d0.ctex"]
 
 [params]
 

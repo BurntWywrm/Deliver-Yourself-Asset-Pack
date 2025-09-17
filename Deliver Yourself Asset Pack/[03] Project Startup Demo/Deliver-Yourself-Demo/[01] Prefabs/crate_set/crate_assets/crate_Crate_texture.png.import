@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf5old1bnf0uq"
-path="res://.godot/imported/gift_light_gift_texture.png-8cd3a03bc1594b5f9ac0d703eacab7ac.ctex"
+uid="uid://hfgdgnajnnm8"
+path="res://.godot/imported/crate_Crate_texture.png-667b83e1857814e42696499e7dc1e5a2.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "f293fe38fc6d2bdda178c81eeefd17e5"
+"md5": "0ad77b27ea12a10f5084050921a21a45"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/player/assets/gift/gift_light_gift_texture.png"
-dest_files=["res://.godot/imported/gift_light_gift_texture.png-8cd3a03bc1594b5f9ac0d703eacab7ac.ctex"]
+source_file="res://[01] Prefabs/crate_set/crate_assets/crate_Crate_texture.png"
+dest_files=["res://.godot/imported/crate_Crate_texture.png-667b83e1857814e42696499e7dc1e5a2.ctex"]
 
 [params]
 

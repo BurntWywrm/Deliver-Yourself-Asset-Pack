@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccyq16h5osws4"
-path="res://.godot/imported/envelope_light_envelope_texture.png-912efd7b45dd7fb15c648d5e72a12cbf.ctex"
+uid="uid://dqeposmnp7efs"
+path="res://.godot/imported/coal_coal_texture.png-dd53433583df1c6e7e527c8a30817157.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "1aef5d61dc7df6954a7f013440b211a5"
+"md5": "0071e95ce84da83bc2de92a61d22f7c7"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/player/assets/envelope/envelope_light_envelope_texture.png"
-dest_files=["res://.godot/imported/envelope_light_envelope_texture.png-912efd7b45dd7fb15c648d5e72a12cbf.ctex"]
+source_file="res://[01] Prefabs/player/player assets/coal/coal_coal_texture.png"
+dest_files=["res://.godot/imported/coal_coal_texture.png-dd53433583df1c6e7e527c8a30817157.ctex"]
 
 [params]
 

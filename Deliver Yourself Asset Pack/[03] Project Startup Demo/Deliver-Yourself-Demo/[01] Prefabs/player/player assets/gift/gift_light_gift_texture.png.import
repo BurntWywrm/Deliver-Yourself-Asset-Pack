@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf6wxruar2qgq"
-path="res://.godot/imported/broken_modular_pipe_set_Pipe_texture.png-61261d383bb73c0bc7201e18246ba9fe.ctex"
+uid="uid://cf5old1bnf0uq"
+path="res://.godot/imported/gift_light_gift_texture.png-1c67ce84657a4f47f6f65dbfb94d8171.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "5c63f78373705d5e5042f2aef47a546b"
+"md5": "f293fe38fc6d2bdda178c81eeefd17e5"
 }
 
 [deps]
 
-source_file="res://[01] Prefabs/broken_modular_pipe_set/broken_modular_pipe_set_Pipe_texture.png"
-dest_files=["res://.godot/imported/broken_modular_pipe_set_Pipe_texture.png-61261d383bb73c0bc7201e18246ba9fe.ctex"]
+source_file="res://[01] Prefabs/player/player assets/gift/gift_light_gift_texture.png"
+dest_files=["res://.godot/imported/gift_light_gift_texture.png-1c67ce84657a4f47f6f65dbfb94d8171.ctex"]
 
 [params]
 
