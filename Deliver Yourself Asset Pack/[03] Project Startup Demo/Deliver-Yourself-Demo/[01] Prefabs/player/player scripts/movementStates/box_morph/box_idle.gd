@@ -16,7 +16,7 @@ func process_input(event: InputEvent) -> State:
 		return box_move
 	if Input.is_action_just_pressed("jump"):
 		return box_jump
-
+	
 	return null
 
 func process_frame(delta: float) -> State:

@@ -15,6 +15,7 @@ func process_input(event: InputEvent) -> State:
 	return null
 
 func process_frame(delta: float) -> State:
+	return gift_idle
 	return null
 
 func process_physics(delta: float) -> State:

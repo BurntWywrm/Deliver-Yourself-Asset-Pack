@@ -25,12 +25,6 @@ script = ExtResource("1_aq214")
 [node name="playerCollision" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4q4gh")
 
-[node name="selectionComponent" type="Node" parent="." node_paths=PackedStringArray("envelope_morph", "gift_morph", "box_morph")]
-script = ExtResource("16_cjj7x")
-envelope_morph = NodePath("../shapeshiftManager/envelope")
-gift_morph = NodePath("../shapeshiftManager/gift")
-box_morph = NodePath("../shapeshiftManager/box")
-
 [node name="shapeshiftManager" type="Node" parent="." node_paths=PackedStringArray("starting_morph")]
 script = ExtResource("2_ibnt8")
 starting_morph = NodePath("box")
@@ -64,14 +58,20 @@ script = ExtResource("4_lb1x6")
 script = ExtResource("4_xvlyh")
 starting_movement = NodePath("gift_idle")
 
-[node name="gift_move" type="Node" parent="shapeshiftManager/gift/movementManager"]
+[node name="gift_move" type="Node" parent="shapeshiftManager/gift/movementManager" node_paths=PackedStringArray("gift_shoot", "gift_idle")]
 script = ExtResource("9_l7uhm")
+gift_shoot = NodePath("../gift_shoot")
+gift_idle = NodePath("../gift_idle")
 
-[node name="gift_shoot" type="Node" parent="shapeshiftManager/gift/movementManager"]
+[node name="gift_shoot" type="Node" parent="shapeshiftManager/gift/movementManager" node_paths=PackedStringArray("gift_move", "gift_idle")]
 script = ExtResource("10_o6x8g")
+gift_move = NodePath("../gift_move")
+gift_idle = NodePath("../gift_idle")
 
-[node name="gift_idle" type="Node" parent="shapeshiftManager/gift/movementManager"]
+[node name="gift_idle" type="Node" parent="shapeshiftManager/gift/movementManager" node_paths=PackedStringArray("gift_move", "gift_shoot")]
 script = ExtResource("9_00gpa")
+gift_move = NodePath("../gift_move")
+gift_shoot = NodePath("../gift_shoot")
 
 [node name="envelope" type="Node" parent="shapeshiftManager"]
 script = ExtResource("3_dew5c")
@@ -80,18 +80,26 @@ script = ExtResource("3_dew5c")
 script = ExtResource("4_xvlyh")
 starting_movement = NodePath("envelope_idle")
 
-[node name="envelope_move" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+[node name="envelope_move" type="Node" parent="shapeshiftManager/envelope/movementManager" node_paths=PackedStringArray("envelope_idle", "envelope_fall")]
 script = ExtResource("10_rh1u8")
+envelope_idle = NodePath("../envelope_idle")
+envelope_fall = NodePath("../envelope_fall")
 
-[node name="envelope_fall" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+[node name="envelope_fall" type="Node" parent="shapeshiftManager/envelope/movementManager" node_paths=PackedStringArray("envelope_move", "envelope_idle")]
 script = ExtResource("11_mm50h")
+envelope_move = NodePath("../envelope_move")
+envelope_idle = NodePath("../envelope_idle")
 
-[node name="envelope_idle" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+[node name="envelope_idle" type="Node" parent="shapeshiftManager/envelope/movementManager" node_paths=PackedStringArray("envelope_move", "envelope_fall")]
 script = ExtResource("10_axysn")
+envelope_move = NodePath("../envelope_move")
+envelope_fall = NodePath("../envelope_fall")
 
-[node name="playerVisuals" type="Node3D" parent="."]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="selectionComponent" type="Node" parent="." node_paths=PackedStringArray("envelope_morph", "gift_morph", "box_morph")]
+script = ExtResource("16_cjj7x")
+envelope_morph = NodePath("../shapeshiftManager/envelope")
+gift_morph = NodePath("../shapeshiftManager/gift")
+box_morph = NodePath("../shapeshiftManager/box")
 
 [node name="Timers" type="Node" parent="."]
 
@@ -99,5 +107,9 @@ script = ExtResource("10_axysn")
 unique_name_in_owner = true
 wait_time = 2.5
 one_shot = true
+
+[node name="playerVisuals" type="Node3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [connection signal="timeout" from="Timers/cycleCD" to="selectionComponent" method="_on_cycle_cd_timeout"]
