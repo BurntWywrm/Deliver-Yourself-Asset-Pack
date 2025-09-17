@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyfd8nldo0m0x"]
+[gd_scene load_steps=3 format=3 uid="uid://dyfd8nldo0m0x"]
+
+[ext_resource type="Script" uid="uid://ct17jyb8u78n" path="res://[01] Prefabs/player/player scripts/playerScript/playerScript.gd" id="1_aq214"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4q4gh"]
 
 [node name="player" type="RigidBody3D"]
+script = ExtResource("1_aq214")
 
 [node name="playerCollision" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4q4gh")
