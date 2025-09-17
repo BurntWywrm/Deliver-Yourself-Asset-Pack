@@ -1,7 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyfd8nldo0m0x"]
+[gd_scene load_steps=17 format=3 uid="uid://dyfd8nldo0m0x"]
 
 [ext_resource type="Script" uid="uid://ct17jyb8u78n" path="res://[01] Prefabs/player/player scripts/playerScript/playerScript.gd" id="1_aq214"]
 [ext_resource type="Script" uid="uid://c6nlvd5ji3apw" path="res://[01] Prefabs/player/player scripts/shapeshiftManager/shapeshiftManager.gd" id="2_ibnt8"]
+[ext_resource type="Script" uid="uid://cyndv3tdt63ew" path="res://[01] Prefabs/player/player scripts/shapeshiftStates/envelope_morph/envelope_morph.gd" id="3_dew5c"]
+[ext_resource type="Script" uid="uid://dkpswjhrevmm5" path="res://[01] Prefabs/player/player scripts/shapeshiftStates/box_morph/box_morph.gd" id="3_vtf16"]
+[ext_resource type="Script" uid="uid://c06ygjcufdyr6" path="res://[01] Prefabs/player/player scripts/shapeshiftStates/gift_morph/gift_morph.gd" id="4_lb1x6"]
+[ext_resource type="Script" uid="uid://cr6npoa8xiefg" path="res://[01] Prefabs/player/player scripts/movementManager/movementManager.gd" id="4_xvlyh"]
+[ext_resource type="Script" uid="uid://b8sp2ryli2ebv" path="res://[01] Prefabs/player/player scripts/movementStates/box_morph/box_move.gd" id="5_vhqd1"]
+[ext_resource type="Script" uid="uid://bghiuglfdrmkl" path="res://[01] Prefabs/player/player scripts/movementStates/box_morph/box_idle.gd" id="5_xvlyh"]
+[ext_resource type="Script" uid="uid://du0equ2kir8ux" path="res://[01] Prefabs/player/player scripts/movementStates/box_morph/box_jump.gd" id="6_oj8hd"]
+[ext_resource type="Script" uid="uid://dfmy1gg5rv1c3" path="res://[01] Prefabs/player/player scripts/movementStates/gift_morph/gift_idle.gd" id="9_00gpa"]
+[ext_resource type="Script" uid="uid://bobivtxhet8qy" path="res://[01] Prefabs/player/player scripts/movementStates/gift_morph/gift_move.gd" id="9_l7uhm"]
+[ext_resource type="Script" uid="uid://d86snqsa3gg1" path="res://[01] Prefabs/player/player scripts/movementStates/envelope_morph/envelope_idle.gd" id="10_axysn"]
+[ext_resource type="Script" uid="uid://cj70fkwguuy8k" path="res://[01] Prefabs/player/player scripts/movementStates/gift_morph/gift_shoot.gd" id="10_o6x8g"]
+[ext_resource type="Script" uid="uid://whrycoxoplji" path="res://[01] Prefabs/player/player scripts/movementStates/envelope_morph/envelope_move.gd" id="10_rh1u8"]
+[ext_resource type="Script" uid="uid://k2jxcbv5n4qw" path="res://[01] Prefabs/player/player scripts/movementStates/envelope_morph/envelope_fall.gd" id="11_mm50h"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4q4gh"]
 
@@ -11,37 +24,53 @@ script = ExtResource("1_aq214")
 [node name="playerCollision" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4q4gh")
 
-[node name="shapeshiftManager" type="Node" parent="."]
+[node name="shapeshiftManager" type="Node" parent="." node_paths=PackedStringArray("starting_morph")]
 script = ExtResource("2_ibnt8")
+starting_morph = NodePath("box")
 
 [node name="box" type="Node" parent="shapeshiftManager"]
+script = ExtResource("3_vtf16")
 
 [node name="movementManager" type="Node" parent="shapeshiftManager/box"]
+script = ExtResource("4_xvlyh")
 
 [node name="box_move" type="Node" parent="shapeshiftManager/box/movementManager"]
+script = ExtResource("5_vhqd1")
 
 [node name="box_jump" type="Node" parent="shapeshiftManager/box/movementManager"]
+script = ExtResource("6_oj8hd")
 
 [node name="box_idle" type="Node" parent="shapeshiftManager/box/movementManager"]
+script = ExtResource("5_xvlyh")
 
 [node name="gift" type="Node" parent="shapeshiftManager"]
+script = ExtResource("4_lb1x6")
 
 [node name="movementManager" type="Node" parent="shapeshiftManager/gift"]
+script = ExtResource("4_xvlyh")
 
 [node name="gift_move" type="Node" parent="shapeshiftManager/gift/movementManager"]
+script = ExtResource("9_l7uhm")
 
 [node name="gift_shoot" type="Node" parent="shapeshiftManager/gift/movementManager"]
+script = ExtResource("10_o6x8g")
 
 [node name="gift_idle" type="Node" parent="shapeshiftManager/gift/movementManager"]
+script = ExtResource("9_00gpa")
 
 [node name="envelope" type="Node" parent="shapeshiftManager"]
+script = ExtResource("3_dew5c")
 
 [node name="movementManager" type="Node" parent="shapeshiftManager/envelope"]
+script = ExtResource("4_xvlyh")
 
 [node name="envelope_move" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+script = ExtResource("10_rh1u8")
 
 [node name="envelope_fall" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+script = ExtResource("11_mm50h")
 
 [node name="envelope_idle" type="Node" parent="shapeshiftManager/envelope/movementManager"]
+script = ExtResource("10_axysn")
 
 [node name="playerVisuals" type="Node3D" parent="."]

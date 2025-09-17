@@ -1,4 +1,4 @@
-# envelope_moev.gd
+# envelope_fall.gd
 extends State
 
 func enter() -> void:

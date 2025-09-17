@@ -4,8 +4,8 @@ extends Node
 ## Delegates player functions to the state and handles any state transitions
 
 @export_group("Shapeshifting Morphs")
-var starting_morph: State
-var current_morph: State
+@export var starting_morph: State
+@export var current_morph: State
 
 # Initialize the state machine by giving each child state a reference to the
 # parent object it belongs to and enter the default starting_morph.
