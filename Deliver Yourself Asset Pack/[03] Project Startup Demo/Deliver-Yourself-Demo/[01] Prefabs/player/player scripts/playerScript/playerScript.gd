@@ -13,6 +13,7 @@ func _ready() -> void:
 	# that way they can move and react accordingly
 	shapeshift_manager.init(self, animation, selection_component)
 
+# Passes functions to the morph states
 func _unhandled_input(event: InputEvent) -> void:
 	shapeshift_manager.process_input(event)
 

@@ -12,9 +12,12 @@ func exit() -> void:
 	pass
 
 func process_input(event: InputEvent) -> State:
+	if Input.is_action_just_pressed("jump"):
+		return box_jump
 	return null
 
 func process_frame(delta: float) -> State:
+	return box_idle
 	return null
 
 func process_physics(delta: float) -> State:

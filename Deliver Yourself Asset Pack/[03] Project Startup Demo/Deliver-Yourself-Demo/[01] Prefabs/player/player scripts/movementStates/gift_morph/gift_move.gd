@@ -1,6 +1,10 @@
 # gift_move.gd
 extends State
 
+@export_group("Action States")
+@export var gift_shoot: State
+@export var gift_idle: State
+
 func enter() -> void:
 	print("Action: Gift_Move")
 

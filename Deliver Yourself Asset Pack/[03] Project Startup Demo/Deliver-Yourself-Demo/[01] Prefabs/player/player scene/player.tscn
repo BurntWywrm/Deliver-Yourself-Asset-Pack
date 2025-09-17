@@ -42,14 +42,20 @@ script = ExtResource("3_vtf16")
 script = ExtResource("4_xvlyh")
 starting_movement = NodePath("box_idle")
 
-[node name="box_move" type="Node" parent="shapeshiftManager/box/movementManager"]
+[node name="box_move" type="Node" parent="shapeshiftManager/box/movementManager" node_paths=PackedStringArray("box_jump", "box_idle")]
 script = ExtResource("5_vhqd1")
+box_jump = NodePath("../box_jump")
+box_idle = NodePath("../box_idle")
 
-[node name="box_jump" type="Node" parent="shapeshiftManager/box/movementManager"]
+[node name="box_jump" type="Node" parent="shapeshiftManager/box/movementManager" node_paths=PackedStringArray("box_move", "box_idle")]
 script = ExtResource("6_oj8hd")
+box_move = NodePath("../box_move")
+box_idle = NodePath("../box_idle")
 
-[node name="box_idle" type="Node" parent="shapeshiftManager/box/movementManager"]
+[node name="box_idle" type="Node" parent="shapeshiftManager/box/movementManager" node_paths=PackedStringArray("box_move", "box_jump")]
 script = ExtResource("5_xvlyh")
+box_move = NodePath("../box_move")
+box_jump = NodePath("../box_jump")
 
 [node name="gift" type="Node" parent="shapeshiftManager"]
 script = ExtResource("4_lb1x6")

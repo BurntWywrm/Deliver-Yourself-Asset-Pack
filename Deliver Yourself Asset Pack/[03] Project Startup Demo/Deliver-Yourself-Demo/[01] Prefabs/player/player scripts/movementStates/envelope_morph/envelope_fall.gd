@@ -1,6 +1,10 @@
 # envelope_fall.gd
 extends State
 
+@export_group("Action States")
+@export var envelope_move: State
+@export var envelope_idle: State
+
 func enter() -> void:
 	print("Action: Envelope_Fall")
 

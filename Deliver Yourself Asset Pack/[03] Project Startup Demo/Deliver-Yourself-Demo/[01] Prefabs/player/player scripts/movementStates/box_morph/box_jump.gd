@@ -12,6 +12,8 @@ func exit() -> void:
 	pass
 
 func process_input(event: InputEvent) -> State:
+	if Input.get_vector("move_left", "move_right", "move_forward", "move_back"):
+		return box_move
 	return null
 
 func process_frame(delta: float) -> State:

@@ -19,3 +19,13 @@ func process_frame(delta: float) -> State:
 
 func process_physics(delta: float) -> State:
 	return null
+
+# Passes functions to the movement states
+func _unhandled_input(event: InputEvent) -> void:
+	movement_manager.process_input(event)
+
+func _physics_process(delta: float) -> void:
+	movement_manager.process_physics(delta)
+
+func _process(delta: float) -> void:
+	movement_manager.process_frame(delta)
